@@ -12,7 +12,7 @@ class AddItemToCartController extends Controller
     public function __invoke(Item $item) {
 
         Cart::create(['id_item' => $item->id]);
-        return http_response_code(200);
+        return response()->json(['status' => 'Товар добавлен в корзину !']);
 
     }
 }
