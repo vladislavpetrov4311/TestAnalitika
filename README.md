@@ -11,11 +11,11 @@
 | Какой результат покажет выполнение операторов SELECT COUNT (*)?  | 3. Число строк таблицы, указанной во FROM, включая значение NULL
 | В таблице «Animals» базы данных зоопарка содержится информация обо всех обитающих там животных, в том числе о лисах: red fox, grey fox, little fox. Напишите запрос, возвращающий информацию о возрасте лис  | 1. SELECT age FROM Animals WHERE Animal LIKE “%fox”  
 | Чем отличается DELETE от TRUNCATE?  | 2. DELETE используется для удаления одной или нескольких строк из таблицы, а TRUNCATE используется для удаления всех строк из таблицы. 3. DELETE может использовать условие WHERE, а TRUNCATE всегда удаляет все записи из таблицы  
-| Дана таблица: ![Alt text](Images\image.png)| 4. 2  
+| Дана таблица: ![Alt text](Images/image.png)| 4. 2  
 
 ## Задание 2
 
-![Alt text](Images\image-1.png)
+![Alt text](Images/image-1.png)
 
 ## Задание 3 
 
@@ -23,18 +23,18 @@
 
 1. Отображение витрины товаров
 
-    ![Alt text](Images\image-2.png)
+    ![Alt text](Images/image-2.png)
 2. Переход с витрины а экран с детальным описание товара
 
-    ![Alt text](Images\image-3.png)
+    ![Alt text](Images/image-3.png)
 3. Добавление товара в корзину
 
-    ![Alt text](Images\image-4.png)
+    ![Alt text](Images/image-4.png)
 
 ## Задание 3.2 Построение Sequence UML 
 
-![Alt text](Images\image-5.png)
+![Alt text](Images/image-5.png)
 
 ## Задание 4
 
-![Alt text](Images\image-6.png)
+![Alt text](Images/image-6.png)
