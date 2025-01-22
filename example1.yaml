@@ -1,0 +1,35 @@
+openapi: 3.0.0
+info:
+  title: Витрина товаров API
+  description: API для получения информации о товарах в витрине
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+paths:
+  /item/vitrin:
+    get:
+      summary: Получение списка товаров из витрины
+      description: Возвращает массив объектов, содержащих информацию о товарах.
+      responses:
+        '200':
+          description: Успешный ответ с массивом товаров
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      example: 1
+                    short_description:
+                      type: string
+                      example: "russian book. Bulgakov"
+                    price:
+                      type: integer
+                      example: 100
+        '404':
+          description: Ресурс не найден
+        '500':
+          description: Внутренняя ошибка сервера

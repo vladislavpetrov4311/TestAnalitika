@@ -1,0 +1,43 @@
+openapi: 3.0.0
+info:
+  title: Витрина товаров API
+  description: API для получения информации о товарах в витрине
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+paths:
+  /item/{id}:
+    get:
+      summary: Получение информации о товаре по идентификатору
+      description: Возвращает объект, содержащий информацию о товаре по его идентификатору.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Уникальный идентификатор товара
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Успешный ответ с информацией о товаре
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                    short_description:
+                    type: string
+                    example: "russian book. Bulgakov"
+                    full_description:
+                    type: string
+                    example: "Novel. Master & Margarite"
+                    price:
+                    type: integer
+                    example: 100
+        '404':
+          description: Товар не найден
+        '500':
+          description: Внутренняя ошибка сервера
